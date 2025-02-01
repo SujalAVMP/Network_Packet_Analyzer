@@ -2,7 +2,7 @@
 
 Download the sample PCAP file from here: [PCAP Files](https://drive.google.com/drive/u/4/folders/1n84jGddZ38fDjy9jKH3qw3J_H0SaKThu)
 
-Turn off your wifi, run the adhoc_network_create.sh file on Ubuntu 24.04 after substituting wlp0s20f3 with your wireless network interface to create an adhoc network. Connect to the network using some other Windows or Mac machine. 
+Turn off your wifi, run the adhoc_network_create.sh file on Ubuntu 24.04 after substituting wlp0s20f3 with your wireless network interface to create an adhoc network. Connect to the network using some other Windows or Mac machine using the password 1234567890. 
 
 In a terminal with elevated privileges (administrator or sudo), run 
 ```bash 

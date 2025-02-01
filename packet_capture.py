@@ -6,7 +6,7 @@ import sys
 packet_count = 0 
 
 class PacketCapture:
-    def _init_(self, interface="lo", output_file="captured_packets.pcap"):
+    def __init__(self, interface="lo", output_file="captured_packets.pcap"):
         """
         Initialize the packet capture system.
         
@@ -102,5 +102,5 @@ def main():
     # filter_str = ""
     capturer.start_capture(filter_str)
 
-if __name__ == "_main_":
+if __name__ == "__main__":
     main()
