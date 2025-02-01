@@ -6,7 +6,7 @@ Turn off your wifi, run the adhoc_network_create.sh file on Ubuntu 24.04 after s
 
 In a terminal with elevated privileges (administrator or sudo), run 
 ```bash 
-packet_capture.py --interface <INSERT INTERFACE NAME>
+sudo python packet_capture.py --interface <INSERT INTERFACE NAME>
 ``` 
 on that machine to capture the packets and run the following command to send the packets over the adhoc network from the Ubuntu Machine
 
