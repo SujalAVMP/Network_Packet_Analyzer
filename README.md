@@ -4,7 +4,11 @@ Download the sample PCAP file from here: [PCAP Files](https://drive.google.com/d
 
 Turn off your wifi, run the adhoc_network_create.sh file on Ubuntu 24.04 after substituting wlp0s20f3 with your wireless network interface to create an adhoc network. Connect to the network using some other Windows or Mac machine. 
 
-In a terminal with elevated privileges (administrator or sudo), run packet_capture.py --interface <INSERT INTERFACE NAME> on that machine to capture the packets and run the following command to send the packets over the adhoc network from the Ubuntu Machine
+In a terminal with elevated privileges (administrator or sudo), run 
+```bash 
+packet_capture.py --interface <INSERT INTERFACE NAME>
+``` 
+on that machine to capture the packets and run the following command to send the packets over the adhoc network from the Ubuntu Machine
 
 ```bash
 sudo tcpreplay-edit --enet-dmac=FF:FF:FF:FF:FF:FF --mbps=1 --stats=1 -i <YOUR NETWORK INTERFACE> <PCAP FILE>
